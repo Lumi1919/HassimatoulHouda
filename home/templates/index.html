@@ -1,0 +1,554 @@
+{% load static %}
+<html lang="en">
+
+<head>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Assimatoul Houda</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+	<!-- CSS Files -->
+
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'animate.min.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'font-awesome.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'owl.carousel.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'pro-bars.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'reset.css' %}" />
+	<link rel="stylesheet" href="{% static 'player/YTPlayer.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'responsive.css' %}" />
+
+
+
+	<!-- End CSS Files -->
+
+</head>
+
+<div>
+
+	<!-- Navigation -->
+	<section id="navigation" class="dark-nav">
+		<!-- Navigation Inner -->
+		<div class="nav-inner">
+			<!-- Site Logo -->
+			<div class="site-logo fancy">
+				<a href="#" id="logo-text" class="scroll logo"><div class="logopanther"></div>Assimatoul<br>Huda
+				</a>
+			</div>
+
+
+			<!-- End Site Logo -->
+			<a class="mini-nav-button gray2"><i class="fa fa-bars"></i></a>
+			<!-- Navigation Menu -->
+		    <div class="nav-menu">
+				<ul class="nav uppercase">
+					<li><a href="{% url 'home:home' %}" >Menu</a></li>
+					<li><a href="{% url 'multimedia:multiindex' %}" class="scroll">Multimedia</a></li>
+					<li><a href="{% url 'home:articles' %}">Articles</a></li>
+					<li><a href="{% url 'event:activites' %}" class="scroll">Evenements</a></li>
+					<li><a href="{% url 'membres:hadara' %}" class="scroll">Membres</a></li>
+					<li><a href="{% url 'compte:acces' %}" class="scroll">Deconnexion</a></li>
+				</ul>
+		  </div><!-- End Navigation Menu -->
+		</div><!-- End Navigation Inner -->
+	</section><!-- End Navigation Section -->
+
+
+	<!-- Home Section -->
+	<section id="home" class="relative">
+		<div id="slides">
+			<div class="slides-container relative">
+				<!-- Slider Images -->
+				<div class="image2"></div>
+                <div class="image1"></div>
+				<div class="image3"></div>
+                <div class="image4"></div>
+				 <!-- End Slider Images -->
+			</div>
+			<!-- Slider Controls -->
+			<nav class="slides-navigation">
+			  <a href="#" class="next"></a>
+			  <a href="#" class="prev"></a>
+			</nav>
+		</div><!-- End Home Slides -->
+		<div class="v2 absolute">
+
+			<!-- Auto Typocraphic Texts -->
+			<div class="typographic">
+            	<!-- Your Logo -->
+
+				<h2 class=" condensed uppercase no-padding no-margin bold gray2">La voie de</h2>
+				<h2 class=" condensed uppercase no-padding no-margin bold colored">la droiture</h2>
+			</div><!--End Auto Typocraphic Texts -->
+		</div><!-- End V2 area -->
+	</section><!-- End Home Section -->
+
+
+	<!-- Fun Acts -->
+	<section id="fun-acts" class="container">
+
+		<div class="inner fun-acts">
+        <div class="about-margin"></div>
+        <a class="about-icon">
+			<i class="fa fa-key"></i>
+		</a><br>
+
+			<!-- Header -->
+			<h1 class="header light gray1 animated" data-animation="fadeInLeft" data-animation-delay="400">
+			 La Ilaha Ila Allah,<span class="colored" data-animation="fadeInRight">Salatoul Fatiha:</span></h1>
+			<!-- Description -->
+			<p class="h-desc"><span class="colored">La clé </span> du dévoilement.</p>
+
+		</div><!-- End Fun Acts Inner -->
+
+	</section><!-- End Fun Acts Section -->
+
+    <!-- About -->
+	<section id="about" class="container waypoint">
+		<div class="inner">
+
+			<!-- Header -->
+			<h1 class="header light gray3 fancy"><span class="colored">Les fondements </span>de la voie</h1>
+
+			<!-- Description -->
+			<p class="h-desc gray4">lorem Ipsum is<span class="colored bold"> lorem Ipsum</span> of passages of Lorem Ipsum available, but the majority have suffered alteration.<br /><br /></p>
+			<hr>
+
+			<!-- Boxes -->
+			<div class="boxes">
+
+
+				<div class="col-xs-3 col-sm-6 col-md-3 about-box animated" data-animation="fadeIn" data-animation-delay="100">
+				<p class="lead">Lazime et Wazifa</p>
+				<hr><br>
+					<a class="about-icon">
+						<i class="fa fa-wheelchair"></i>
+					</a>
+					<br><br>
+					<p class="light about-text">lorem Ipsum is lorem Ipsum of passages of Lorem Ipsum available, but the majority.</p>
+				</div>
+
+
+				<div class="col-xs-3 col-sm-6 col-md-3 about-box animated" data-animation="fadeIn" data-animation-delay="300">
+				<p class="lead">Hadratoul Juma</p>
+				<hr><br>
+					<a class="about-icon">
+						<i class="fa fa-wheelchair"></i>
+					</a>
+					<br><br>
+					<p class="light about-text">lorem Ipsum is lorem Ipsum of passages of Lorem Ipsum available, but the majority.</p>
+				</div>
+
+
+				<div class="col-xs-12 col-md-6 col-sm-12 about-box animated" data-animation="fadeIn" data-animation-delay="700">
+				<p class="lead lead-text">Zikr no-stop</p><hr>
+					<p class="left pro-bars" style="color: rgb(83, 205, 181);">Salatoul Fatiha </p>
+					<div class="pro-bar-container color-green-sea">
+						<div class="pro-bar bar-100 color-turquoise" data-pro-bar-percent="100">
+							<div class="pro-bar-candy candy-ltr"></div>
+						</div>
+					</div>
+					<p class="left pro-bars" style="color: #3498DB;">La ilaha ila Allah </p>
+					<div class="pro-bar-container color-belize-hole">
+						<div class="pro-bar bar-80 color-peter-river" data-pro-bar-percent="80" data-pro-bar-delay="200">
+							<div class="pro-bar-candy candy-ltr"></div>
+						</div>
+					</div>
+					<p class="left pro-bars" style="color: #B483C8;">Jawharatoul Kamal </p>
+					<div class="pro-bar-container color-wisteria">
+						<div class="pro-bar bar-70 color-amethyst" data-pro-bar-percent="70" data-pro-bar-delay="300">
+							<div class="pro-bar-candy candy-ltr"></div>
+						</div>
+					</div>
+				</div>
+			</div><!-- End Boxes -->
+		</div><!-- End About Inner -->
+	</section><!-- End About Section -->
+
+	<!-- Features -->
+	<section id="features" class="container">
+
+		<div class="inner">
+
+			<!-- Header -->
+			<h1 class="header light gray1">La ma'arifa , <span class="colored fancy">les 3 niveaux:</span></h1>
+
+			<!-- Description -->
+			<p class="h-desc white bold">lorem Ipsum is<span class="colored bold"> lorem Ipsum</span> lorem Ipsum is simply dummy text of the printing and typesetting industry loremipsum. lorem Ipsum is simply dummy text of the printing and typesetting industry loremipsum is simple.</p>
+
+			<div class="features-boxes">
+
+				<!-- Box 1 -->
+				<div class="col-xs-4 f-box animated" data-animation="fadeIn" data-animation-delay="0">
+					<!-- Icon -->
+					<a class="f-icon">
+						<i class="fa fa-eye-slash"></i>
+					</a>
+					<!-- Header -->
+					<p class="feature-head">Haqiqatoul Ilahiya</p>
+					<!-- Text -->
+					<p class="feature-text ">La réalité divine.<br>
+						Station où l'on accède à la vision des manifestations d'Allah swt.<br>
+						La dualité s'estompe,"Batine" et "Zahir" deviennent un.<br>
+						Le caché devient apparent .
+						Al Haqq forge l'intuition, ouvre le cœur et l'esprit de l'accedant (fath al moubine)<br>
+						en vue d'y infuser des connaissances ésotériques.<br>
+						Le disciple atteint alors une certitude plus avancée (aynoul yakhin)..</p>
+				</div>
+
+
+				<!-- Box 2 -->
+				<div class="col-xs-4 f-box animated" data-animation="fadeIn" data-animation-delay="100">
+					<!-- Icon -->
+					<a class="f-icon">
+						<i class="fa fa-eye"></i>
+					</a>
+					<!-- Header -->
+					<p class="feature-head">Ilmoul Ilahiya</p>
+					<!-- Text -->
+					<p class="feature-text ">La science d'Allah swt.<br>
+						La gnose qui embrasse toute chose.
+						Le disciple qui l'acquiert devient un ouléma, digne héritier des Prophètes.<br>
+						Le Coran lui parle, il discute avec lui même en Le lisant.<br>
+						Les vocables et les paraboles du Coran prennent vie dans sa compréhension.<br>
+						Il atteint des lors une certitude éclairée qui repose sur la science du tout (ilmoul yakhin).</p>
+				</div>
+
+
+				<!-- Box 3 -->
+				<div class="col-xs-4 f-box animated" data-animation="fadeIn" data-animation-delay="200">
+					<!-- Icon -->
+					<a class="f-icon">
+						<i class="fa fa-key"></i>
+					</a>
+					<!-- Header -->
+					<p class="feature-head">Siroul Ilahiya</p>
+					<!-- Text -->
+					<p class="feature-text light">Secret ultime de l'existence.<br>
+						Celui qui y accède devient un confident intime d'Allah swt.<br>
+						Son être se fond dans l'essence divine entraînant l'extinction de son égo (nafs).<br>
+						Les maîtres du tassawouf et les derviches accomplis parle de "fanahoul fana".<br>
+						C'est à ce stade que l'on acquiert la certitude parfaite (haqqoul yakhin).</p>
+				</div>
+				<div class="clear"></div>
+
+			</div><!-- End Features Boxes -->
+
+		</div> <!-- End Features Inner -->
+
+	</section><!-- End Features Section -->
+
+	<!-- Clients -->
+	<section id="clients" class="container">
+
+		<!-- Team Inner -->
+		<div class="inner team">
+
+			<!-- Header -->
+			<h1 class="header light gray3 fancy"><span class="colored">Chaine de transmission </span>"silsila" </h1>
+
+			<!-- Description -->
+			<p class="h-desc gray4">lorem Ipsum is<span class="colored bold">  lorem Ipsum</span> lorem Ipsum is simply dummy text of the printing and typesetting industry loremipsum. lorem Ipsum is simply dummy text of the printing and typesetting industry loremipsum is simple.</p>
+
+
+			<!-- Members -->
+			<div class="team-members inner-details">
+
+				<!-- Member -->
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<!-- Team Member Image -->
+						<a class="team-image">
+							<!-- Img -->
+							<img src="static/images/Cheikhbi.JPEG" alt="" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">
+								<!-- Name -->
+								<h2 class="member-name light">Cheikh Ahmad Tijani Abbul Abbass</h2>
+								<!-- Description -->
+								<p class="member-description">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+								<!-- Socials -->
+								<div class="socials">
+									<!-- Link -->
+									<a href="#">Lire</a>
+								</div><!-- End Socials -->
+							</div> <!-- End Detail Inner -->
+						</div><!-- End Details -->
+					</div> <!-- End Member Inner -->
+				</div><!-- End Member -->
+
+
+				<!-- Member -->
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="100">
+					<div class="member-inner">
+						<!-- Team Member Image -->
+						<a class="team-image">
+							<!-- Img -->
+							<img src="static/images/CheikhKabir.JPEG" alt="" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">
+								<!-- Name -->
+								<h2 class="member-name light">Imam Cheikh Muhamadou Kabir Barry</h2>
+								<!-- Description -->
+								<p class="member-description">Pôle de la sainteté avéré mais caché durant toute sa vie.</p>
+								<!-- Socials -->
+								<div class="socials">
+									<!-- Image -->
+									<a href="#">Lire</a>
+								</div><!-- End Socials -->
+							</div> <!-- End Detail Inner -->
+						</div><!-- End Details -->
+					</div> <!-- End Member Inner -->
+				</div><!-- End Member -->
+
+
+				<!-- Member -->
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="200">
+					<div class="member-inner">
+						<!-- Team Member Image -->
+						<a class="team-image">
+							<!-- Img -->
+							<img src="static/images/Cheikhbi.JPEG" alt="" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">
+								<!-- Name -->
+								<h2 class="member-name light">Cheikh Suleiman At-Tijani</h2>
+								<!-- Description -->
+								<p class="member-description">Découvrez l'itinéraire spirituel et mystique du guide de Assimatoul houda.<br>
+								Un parcours formidable!</p>
+								<!-- Socials -->
+								<div class="socials">
+									<!-- Link -->
+									<a href="#">Lire</a>
+								</div><!-- End Socials -->
+							</div> <!-- End Detail Inner -->
+						</div><!-- End Details -->
+					</div> <!-- End Member Inner -->
+				</div><!-- End Member -->
+
+			</div><!-- End Members -->
+		</div><!-- End Team Inner -->
+	</section><!-- End Team Section -->
+
+
+
+
+	<!-- Testimonials -->
+	<section id="testimonial" class="testimonials parallax2">
+
+		<div class="inner">
+
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+			    	<ul>
+				     <li class="monial">
+						<!-- Text -->
+						<h1 class="condensed white">
+							"Le disciple doit avoir la conviction que son cheikh est mieux qualifié que quiconque , de
+							connaître ses intérêts, et qu’il ne l’aide à accéder dans une voie, quelle qu’elle soit,
+							que pour et par amour d’Allah, en le dégageant des caprices ténébreux de sa
+							nature humaine. <br>A la question : comment reconnaitre et contacter le cheikh ainsi
+							décrit ? – Réponse : De tels cheikhs sont nombreux, et pour la plupart dans les
+							grandes villes où ils résident. Quant à leur identification, le fait devient très délicat,
+							et leur existence est plus mystérieuse que le soufre rouge, car ils se sont confondus
+							sous un aspect normal dans la masse du peuple."
+						</h1>
+						<!-- Name -->
+						<p class="colored">Cheikh Ahmad Tijani Abbul Abbass</p>
+					</li>
+					</ul>
+			    </div>
+			    <div class="item">
+			      <ul>
+			      <li class="monial">
+						<!-- Text -->
+						<h1 class="condensed white">"Tout ce que tu vois autour de toi,
+							y compris les choses que tu n'aimes guère,
+							y compris les gens que tu méprises ou détestes, est présent en toi à divers degrés.
+							Ne cherche donc pas non plus ton Sheitan hors de toi.
+							Le diable n'est pas une force extraordinaire qui t'attaque du dehors.
+							C'est une voix ordinaire en toi."</h1>
+						<!-- Name -->
+						<p class="colored">Shams de Tabriz</p>
+					</li>
+				</ul>
+			    </div>
+			    <div class="item">
+			    <ul>
+			      <li class="monial">
+						<!-- Text -->
+						<h1 class="condensed white">
+							"Dieu Tout-Puissant dit : "O fils d'Adam, aussi longtemps que tu M'appelleras
+							et que tu Me prieras, Je te pardonnerai ce que tu as fait,
+							et Je ne t'en tiendrai pas rigueur.<br> O fils d'Adam,
+							même si tes péchés devaient atteindre les nuages du ciel,
+							et que tu Me demandais alors pardon, Je te pardonnerai.<br> O fils d'Adam,
+							même si tu venais à Moi avec des péchés aussi grands que la terre et que tu te
+							présentais alors à Moi, sans M'attribuer aucun associé,
+							Je t'accorderai un pardon presque aussi grand."</h1>
+						<!-- Name -->
+						<p class="light">Hadith Qudsi - Anas, At-Tirmidhi</p>
+					</li>
+				</ul>
+			    </div>
+			  </div>
+
+
+			</div>
+
+					</div><!-- End Inner Div -->
+
+	</section><!-- End Testimonials Section -->
+
+	<!-- Blockquote -->
+	<section id="blockquote">
+
+		<div class="inner no-padding colored">
+			<!-- Your Text -->
+			<p class="normal white blockquote fancy">"xalat lu bax, def lu bax, wax lu bax té di sakkou xam-xam"
+			<a href="#about" class="scroll"><i class="fa fa-arrow-right"></i></a></p>
+		</div>
+
+	</section><!-- End Blockquote Section --><br>
+
+
+	<p align="center"><iframe width="60%" height="315" src="https://www.youtube.com/embed/edaPTu4ExwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+	<!-- Contact Section -->
+	<section id="contact" class="container colored">
+		<!-- Contact Inner -->
+		<div class="inner contact">
+
+			<!-- Form Area -->
+			<div class="contact-form">
+
+            	<h4 class="header light gray3 fancy">Contact</h4>
+
+				<!-- Form -->
+				<form id="contact-us" method="post" action="#">
+					<!-- Left Inputs -->
+					<div class="col-xs-6 animated" data-animation="fadeInLeft" data-animation-delay="300">
+						<!-- Name -->
+						<input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+						<!-- Email -->
+						<input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+						<!-- Subject -->
+						<input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+					</div><!-- End Left Inputs -->
+					<!-- Right Inputs -->
+					<div class="col-xs-6 animated" data-animation="fadeInRight" data-animation-delay="400">
+						<!-- Message -->
+						<textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+					</div><!-- End Right Inputs -->
+					<!-- Bottom Submit -->
+					<div class="relative fullwidth col-xs-12">
+						<!-- Send Button -->
+						<button type="submit" id="submit" name="submit" class="form-btn semibold">Envoyer</button>
+					</div><!-- End Bottom Submit -->
+					<!-- Clear -->
+					<div class="clear"></div>
+				</form>
+
+				<!-- Your Mail Message -->
+				<div class="mail-message-area">
+					<!-- Message -->
+					<div class="alert gray-bg mail-message not-visible-message">
+						<strong>Merci</strong> Votre e-mail est envoyé.
+					</div>
+				</div>
+
+			</div><!-- End Contact Form Area -->
+		</div><!-- End Inner -->
+	</section><!-- End Contact Section -->
+
+
+
+	<!-- Site Socials and Address -->
+	<section id="site-socials" class="no-padding white-bg">
+		<div class="site-socials inner no-padding">
+			<!-- Socials -->
+			<div class="socials animated" data-animation="fadeInLeft" data-animation-delay="400">
+				<!-- Facebook -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<!-- Twitter -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-twitter"></i>
+				</a>
+				<!-- Instagram -->
+				<a href="#" class="social">
+					<i class="fa fa-instagram"></i>
+				</a>
+				<!-- Youtube -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-youtube"></i>
+				</a>
+			</div>
+			<!-- Adress, Mail -->
+			<div class="address socials animated" data-animation="fadeInRight" data-animation-delay="500">
+				<!-- Phone Number, Mail -->
+				<p>Phone:  Email : <a href="" class="colored"></a> Dakar</p>
+				<!-- Top Button -->
+				<a href="#home" class="scroll top-button">
+					<i class="fa fa-arrow-circle-up fa-2x"></i>
+				</a>
+			</div><!-- End Adress, Mail -->
+		</div><!-- End Inner -->
+	</section><!-- End Site Socials and Address -->
+
+
+
+	<!-- Footer -->
+	<footer id="footer" class="footer">
+		<!-- Your Company Name -->
+		<!-- Copyright -->
+		<p class="copyright normal">© ShenSanLumi <span class="colored">All Rights Reserved.</span></p>
+	</footer><!-- End Footer -->
+
+	<!-- JS Files -->
+
+
+	<script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/jquery.appear.js' %}"></script>
+	<script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+	<script src="{% static 'js/modernizr-latest.js' %}"></script>
+	<script src="{% static 'js/SmoothScroll.js' %}"></script>
+	<script src="{% static 'js/jquery.parallax-1.1.3.js' %}"></script>
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<script src="{% static 'js/jquery.superslides.js' %}"></script>
+	<script src="{% static 'js/jquery.flexslider.js' %}"></script>
+	<script src="{% static 'js/jquery.mb.YTPlayer.js' %}"></script>
+	<script src="{% static 'js/jquery.fitvids.js' %}"></script>
+	<script src="{% static 'js/jquery.slabtext.js' %}"></script>
+	<script src="{% static 'js/plugins.js' %}"></script>
+
+	<script>
+
+  $("a.about-icon").hover(function () {
+    $(this).children("i").addClass("fa-spin");
+ }, function(){
+ 	$(this).children("i").removeClass("fa-spin");
+ });
+	</script>
+
+
+
+
