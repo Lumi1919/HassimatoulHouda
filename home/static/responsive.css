@@ -77,7 +77,7 @@
 
 	.slides-container div,
 	.home{
-		background-size:auto 120%;
+		background-size:100% 120%;
 	}
 
 	.col-xs-2,
@@ -185,8 +185,9 @@
 
 	.slides-container div,
 	.home{
-		background-size:auto 100%;
+		background-size:100% 600px;
 	}
+
 
 	.hometexts-1{
 		font-size:80px;
@@ -352,6 +353,12 @@
 /* MAX 768px */
 
 @media only screen and (max-width: 768px){
+		.slides-container div,
+	.home{
+		background-size:100% 500px;
+	}
+
+
 
 	#home .v5 .typographic .hometexts-5 ul li{
 		font-size:35px;
@@ -401,6 +408,11 @@
 /* MAX 640px */
 
 @media only screen and (max-width: 640px){
+
+	.slides-container div,
+	.home{
+		background-size:100% 500px;
+	}
 
 	.hometexts-1{
 		font-size:45px;
@@ -544,6 +556,12 @@
 /* MAX 360px */
 
 @media only screen and (max-width: 360px){
+
+	.slides-container div,
+	.home{
+		background-size:100% 350px;
+	}
+
 
 	.hometexts-1{
 		font-size:40px;
