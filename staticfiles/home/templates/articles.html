@@ -1,0 +1,158 @@
+{% load static %}
+<html lang="en">
+
+<head>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Assimatoul Houda</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+
+	<!-- CSS Files -->
+
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'animate.min.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'font-awesome.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'owl.carousel.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'pro-bars.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'reset.css' %}" />
+	<link rel="stylesheet" href="{% static 'player/YTPlayer.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'responsive.css' %}" />
+
+
+
+	<!-- End CSS Files -->
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<section id="navigation" class="dark-nav">
+		<!-- Navigation Inner -->
+		<div class="nav-inner">
+			<!-- Site Logo -->
+			<div class="site-logo fancy">
+				<a href="#" id="logo-text" class="scroll logo"><div class="logopanther"></div>Assimatoul<br>Huda
+				</a>
+			</div>
+
+
+			<!-- End Site Logo -->
+			<a class="mini-nav-button gray2"><i class="fa fa-bars"></i></a>
+			<!-- Navigation Menu -->
+		    <div class="nav-menu">
+				<ul class="nav uppercase">
+					<li><a href="{% url 'home:home' %}" >Menu</a></li>
+					<li><a href="{% url 'multimedia:multiindex' %}" >Multimedia</a></li>
+					<li><a href="{% url 'home:articles' %}">Articles</a></li>
+					<li><a href="{% url 'event:activites' %}">Evenements</a></li>
+					<li><a href="{% url 'membres:hadara' %}" class="scroll">Membres</a></li>
+					<li><a href="{% url 'compte:acces' %}" class="scroll">Deconnexion</a></li>
+				</ul>
+		  </div><!-- End Navigation Menu -->
+		</div><!-- End Navigation Inner -->
+	</section><!-- End Navigation Section -->
+	<br><br><br><br><br><br><br><br>
+
+
+                {% for post in posts %}
+            <article class="articlecss">
+                <h1>
+                <a href="{% url 'home:show' id=post.id %}">{{post.title|upper}}</a>
+                </h1>
+
+                <p class="content">{{post.body|truncatewords:12}}</p>
+
+                <p class="suite"><a href="{% url 'home:show' id=post.id %}">Lire la suite</a></p>
+
+       		</article>
+
+				{% endfor %}
+
+
+
+
+
+
+
+	<!-- Site Socials and Address -->
+	<section id="site-socials" class="no-padding white-bg">
+		<div class="site-socials inner no-padding">
+			<!-- Socials -->
+			<div class="socials animated" data-animation="fadeInLeft" data-animation-delay="400">
+				<!-- Facebook -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<!-- Twitter -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-twitter"></i>
+				</a>
+				<!-- Instagram -->
+				<a href="#" class="social">
+					<i class="fa fa-instagram"></i>
+				</a>
+				<!-- Youtube -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-youtube"></i>
+				</a>
+			</div>
+			<!-- Adress, Mail -->
+			<div class="address socials animated" data-animation="fadeInRight" data-animation-delay="500">
+				<!-- Phone Number, Mail -->
+				<p>Phone:  Email : <a href="" class="colored"></a> Dakar</p>
+			</div><!-- End Adress, Mail -->
+		</div><!-- End Inner -->
+	</section><!-- End Site Socials and Address -->
+
+
+
+
+
+
+	<!-- Footer -->
+	<footer id="footer" class="footer">
+		<!-- Your Company Name -->
+		<!-- Copyright -->
+		<p class="copyright normal">© ShenSanLumi <span class="colored">All Rights Reserved.</span></p>
+	</footer><!-- End Footer -->
+
+	<!-- JS Files -->
+
+
+	<script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/jquery.appear.js' %}"></script>
+	<script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+	<script src="{% static 'js/modernizr-latest.js' %}"></script>
+	<script src="{% static 'js/SmoothScroll.js' %}"></script>
+	<script src="{% static 'js/jquery.parallax-1.1.3.js' %}"></script>
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<script src="{% static 'js/jquery.superslides.js' %}"></script>
+	<script src="{% static 'js/jquery.flexslider.js' %}"></script>
+	<script src="{% static 'js/jquery.mb.YTPlayer.js' %}"></script>
+	<script src="{% static 'js/jquery.fitvids.js' %}"></script>
+	<script src="{% static 'js/jquery.slabtext.js' %}"></script>
+	<script src="{% static 'js/plugins.js' %}"></script>
+
+	<script>
+
+  $("a.about-icon").hover(function () {
+    $(this).children("i").addClass("fa-spin");
+ }, function(){
+ 	$(this).children("i").removeClass("fa-spin");
+ });
+	</script>
+
+
+
+
+
+
+
+
