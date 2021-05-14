@@ -258,7 +258,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 /* Patterns */
 
 	.pattern-white:after{
-		background: url('static/images/pattern-white.png') repeat;
+		background: url('/images/pattern-white.png') repeat;
 		content:'';
 		width: 100%;
 		height: 100%;
@@ -403,7 +403,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	.home{
-		background:url('static/images/1.jpg') center center fixed;
+		background:url('/images/1.jpg') center center fixed;
 		position: relative;
 	}
 
@@ -513,7 +513,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		display: block;
 		width:36px;
 		height:81px;
-		background:url('/static/images/slider-arrows.png');
+		background:url('/images/slider-arrows.png');
 		opacity:0;
 		-webkit-transition: all 0.5s;
 		-moz-transition: all 0.5s;
@@ -756,7 +756,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 /* Services */
 
 	#services{
-		background:url('static/images/parallax/1.jpg') top center fixed;
+		background:url('/images/parallax/1.jpg') top center fixed;
 		padding:55px 0;
 		overflow: hidden;
 	}
@@ -911,7 +911,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	.testimonials{
-		background: url('/static/images/parallax/2.jpg') center center fixed;
+		background: url('/images/parallax/2.jpg') center center fixed;
 		padding: 70px 0 70px;
 		text-align: center;
 		overflow: hidden;
@@ -971,7 +971,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		opacity: 1;
 		width:26px;
 		height: 26px;
-		background:url('/static/images/testimonial-controls.png');
+		background:url('/images/testimonial-controls.png');
 	}
 
 	.testimonials .flex-direction-nav a:before{
@@ -1128,7 +1128,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		height: auto;
 		min-height: 648px;
 		margin:70px auto;
-		background:url('/static/images/mac.png') center center no-repeat;
+		background:url('/images/mac.png') center center no-repeat;
 		background-size:100%;
 	}
 
@@ -1138,7 +1138,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 	
 	#fun-acts{
-		background:#333 url('static/images/bgd/background5.jpg') repeat;
+		background:#333 url('/images/bgd/background5.jpg') repeat;
 	}
 
 
