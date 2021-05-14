@@ -232,10 +232,3 @@
   -webkit-box-shadow:#666666 1px 1px 3px;
 }
 
-.YTPOverlay.raster{
-  background: url("/static/images/raster.html");
-}
-
-.YTPOverlay.raster.retina{
-  background: url("/static/images/raster%402x.html");
-}
