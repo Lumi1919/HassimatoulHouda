@@ -403,7 +403,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	.home{
-		background:url('/static/images/1.jpg') center center fixed;
+		background:url('static/images/1.jpg') center center fixed;
 		position: relative;
 	}
 
