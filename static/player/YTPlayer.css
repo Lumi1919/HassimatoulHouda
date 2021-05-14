@@ -233,9 +233,9 @@
 }
 
 .YTPOverlay.raster{
-  background: url("../images/raster.html");
+  background: url("/static/images/raster.html");
 }
 
 .YTPOverlay.raster.retina{
-  background: url("../images/raster%402x.html");
+  background: url("/static/images/raster%402x.html");
 }
